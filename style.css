@@ -1,0 +1,147 @@
+body {
+  font-family: sans-serif;
+  font-weight: 600;
+  margin: 0;
+  padding: 40px;
+  background: #ff54be8e;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+}
+
+h2 {
+  font-family: sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #000000;
+  margin: 0 0 2px 0;
+  padding: 16px 32px;
+  background: #ffffff;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.cell {
+  background: #ffffff;
+  padding: 32px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 200px;
+}
+
+.cell span {
+  font-size: 1em;
+  color: #ffffff;
+  display: block;
+  margin-bottom: 20px;
+}
+
+a { font-size: 0.95rem; }
+
+
+.underline {
+  color: #000;
+  text-decoration: none;
+  text-align: center;
+  background: linear-gradient(#000 0 0) bottom / 30% 5px no-repeat;
+  padding-bottom: 2px;
+  transition: background-size 0.4s;
+}
+.underline:hover { background-size: 0% 1px; }
+
+.highlighter {
+  color: #4894ff;
+  text-align: center;
+  background: yellow;
+  mix-blend-mode: multiply;
+  padding: 10px;
+  transition: background-color 0.2s;
+}
+.highlighter:hover { background: rgb(255, 41, 209); }
+
+
+.spacing {
+  color: #000;
+  text-decoration: none;
+   text-align: center;
+  display: inline-block;
+  transition: letter-spacing 0.3s;
+}
+.spacing:hover { letter-spacing: 0.25em; }
+
+
+.appears {
+  color: transparent;
+   text-align: center;
+  background: #000;
+  padding: 8px 14px;
+  display: inline-block;
+  transition: color 0.2s;
+}
+.appears:hover { color: #fff; }
+
+
+.rotates {
+  color: #000;
+   text-align: center;
+  display: inline-block;
+  transition: transform 0.4s;
+}
+.rotates:hover { transform: rotate(-360deg) scale(1.05); }
+
+
+.shape {
+  color: #000;
+   text-align: center;
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+  transition: border-radius 0.2s ease-in-out; 
+}
+
+.shape:hover {
+  border-radius: 50%; 
+}
+
+
+.blur {
+  color: #000;
+   text-align: center;
+  display: inline-block;
+  filter: blur(4px);
+  transition: filter 0.25s;
+}
+.blur:hover { filter: blur(0); }
+
+.glow {
+  color: #000;
+   text-align: center;
+  display: inline-block;
+  transition: color 0.2s, text-shadow 0.2s;
+}
+.glow:hover {
+  color: transparent;
+  text-shadow: 0 0 8px #000;
+}
+
+
+.toggle {
+  color: #fff;
+   text-align: center;
+  background: #000;
+  padding: 6px 14px;
+  display: inline-block;
+  transition: background 0.2s, color 0.2s;
+}
+.toggle.on {
+  background: #fff;
+  color: #000;
+  border: 1px solid #000;
+}
